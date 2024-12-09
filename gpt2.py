@@ -209,7 +209,7 @@ def generate(input: str, num_tokens: int, stream: bool = False) -> str:
         logits = logits - logits.max()  # Subtract max for numerical stability
         probs = softmax(logits, dim=-1)  # (vocab_size,)
         if torch.isnan(probs).any() or torch.isinf(probs).any():
-            raise ValueError("Probability tensor contains NaN or Inf values")
+            break
         # Sample from the distribution
         next_token = torch.multinomial(probs, num_samples=1)  # (1,)
 
