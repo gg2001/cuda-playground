@@ -111,7 +111,7 @@ wheels = [
 ]
 
 [[package]]
-name = "gpt2-inference"
+name = "cuda-playground"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [

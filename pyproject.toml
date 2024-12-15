@@ -1,5 +1,5 @@
 [project]
-name = "gpt2-inference"
+name = "cuda-playground"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
